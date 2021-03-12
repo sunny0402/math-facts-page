@@ -20,6 +20,8 @@ body{
 
     /* background-image: linear-gradient(to right, rgba(2, 2, 2, 0.1), rgba(2, 2, 2, 0.9)), url("./images/background-image.jpg"); */
     background-image: url("./images/background-image.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
     overflow: hidden;
     object-fit: cover;
 
