@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="A random math fact page." />
+    <meta
+      name="keywords"
+      content="math, math facts, random math facts, fun facts"
+      tw
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Math Facts Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="loading-container">
+      <img src="./images/load-page-img.jpg" />
+    </div>
+    <div class="page-container">
+      <div class="heading-container">
+        <h1>Math Facts Page</h1>
+        <input id="number_input_box" placeholder="Enter a positive integer" />
+        <button id="get_math_fact">Get Math Fact</button>
+      </div>
+      <h2>Results</h2>
+      <div id="result-container">
+        <!-- append results here -->
+      </div>
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="social-list">
+            <a href="https://github.com/sunny0402?tab=repositories"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a href="https://twitter.com/sunny_codes"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </div>
+          <p class="copyright">
+            Copyright &copy; 2021, sunny0402 - All rights reserved.
+          </p>
+        </div>
+      </footer>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(window).on("load", function () {
+        $(".loading-container").fadeOut(3000);
+      });
+    </script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="getMathFact.js"></script>
+  </body>
+</html>
